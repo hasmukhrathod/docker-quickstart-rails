@@ -14,8 +14,8 @@ services:
   db:
     image: postgres
     volumes:
-      - db-volume:/var/lib/postgresql/data
+      - db-data:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: password
 volumes:
-  db-volume:
+  db-data:
